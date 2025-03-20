@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Antonio Jiménez Infante" />
+    <meta name="generator" content="Ignite v0.5.0" />
+    <title>antjiminf – My Awesome Site</title>
+    <link href="antjiminf.github.io/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="antjiminf.github.io/css/bootstrap-icons.min.css" rel="stylesheet" />
+    <link href="antjiminf.github.io/css/ignite-core.min.css" rel="stylesheet" />
+    <link href="antjiminf.github.io/english-page" rel="canonical" />
+    <script>(function() {
+    function getThemePreference() {
+        return localStorage.getItem('custom-theme') || 'auto';
+    }
+
+    function applyTheme(themeID) {
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const lightThemeID = document.documentElement.getAttribute('data-light-theme') || 'light';
+        const darkThemeID = document.documentElement.getAttribute('data-dark-theme') || 'dark';
+        const actualThemeID = themeID === 'auto' ? (prefersDark ? darkThemeID : lightThemeID) : themeID;
+
+        document.documentElement.setAttribute('data-bs-theme', actualThemeID);
+        document.documentElement.setAttribute('data-theme-state', themeID);
+    }
+
+    function applySyntaxTheme() {
+        const syntaxTheme = getComputedStyle(document.documentElement)
+            .getPropertyValue('--syntax-highlight-theme').trim().replace(/"/g, '');
+
+        if (!syntaxTheme) return;
+
+        document.querySelectorAll('link[data-highlight-theme]').forEach(link => {
+            link.setAttribute('disabled', 'disabled');
+        });
+
+        const themeLink = document.querySelector(`link[data-highlight-theme="${syntaxTheme}"]`);
+        if (themeLink) {
+            themeLink.removeAttribute('disabled');
+        }
+    }
+
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+        const currentTheme = getThemePreference();
+        if (currentTheme === 'auto') {
+            applyTheme('auto');
+            applySyntaxTheme();
+        }
+    });
+
+    const savedTheme = getThemePreference();
+    applyTheme(savedTheme);
+    applySyntaxTheme();
+})();
+</script>
+    <meta property="og:site_name" content="antjiminf" />
+    <meta property="og:title" content="antjiminf" />
+    <meta name="twitter:title" content="antjiminf" />
+    <meta property="og:url" content="antjiminf.github.io/english-page" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:dnt" content="on" />
+  </head>
+  <body class="container">
+    <div>
+      <header>
+        <nav class="fixed-top navbar navbar-expand-md" style="background-color: rgb(70 130 180 / 100%)" data-bs-theme="dark">
+          <div class="container-fluid col">
+            <a href="/" class="navbar-brand">Antonio Jiménez</a>
+            <button type="button" class="navbar-toggler btn" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div id="navbarCollapse" class="collapse navbar-collapse">
+              <ul class="navbar-nav mb-2 mb-md-0 col justify-content-end">
+                <li class="nav-item"><a href="#experience" class="nav-link">👷‍♂️ Experience</a></li>
+                <li class="nav-item"><a href="#education" class="nav-link">🎓 Education</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">💻 Projects</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">☎️ Contact</a></li>
+                <li class="nav-item"><a href="/spanish-page" class="nav-link">🇪🇸 Versión Española</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <h1 class="justify-content-center align-items-center" style="margin-top: 50px">Full Stack developer / iOS developer</h1>
+      <hr />
+      <p>This is my description</p>
+    </div>
+    <p class="text-center mt-5">Created in Swift with <a href="https://github.com/twostraws/Ignite">Ignite</a></p>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/ignite-core.js"></script>
+  </body>
+</html>
