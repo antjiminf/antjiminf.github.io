@@ -7,10 +7,9 @@ struct NavigationBarView: HTML {
     
     var body: some HTML {
         NavigationBar(logo: name) {
-//            for opt in NavOption.allCases {
-//                Link(opt.display(language), target: "#\(opt.rawValue)")
-//            }
-            Link("Experience", target: "#experience")
+            for opt in NavOption.allCases {
+                Link(opt.display(language), target: "#\(opt.rawValue)")
+            }
             Link("\(language.flag+" "+(language == .spanish ? "English Version" : "Versión Española"))",
                  target: language.page)
         }

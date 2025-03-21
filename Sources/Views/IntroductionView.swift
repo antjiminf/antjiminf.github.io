@@ -7,8 +7,8 @@ struct IntroductionView: HTML {
     
     var body: some HTML {
         Text(job)
-            .margin(.top, 50)
-            .frame(alignment: .center)
+            .horizontalAlignment(.center)
+            .margin(.top, 100)
             .font(.title1)
         
         Divider()
