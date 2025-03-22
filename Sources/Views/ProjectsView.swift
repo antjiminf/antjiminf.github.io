@@ -8,9 +8,9 @@ struct ProjectsView: HTML {
     
     var body: some HTML {
         Text(title.display(language).uppercased())
-            .font(.title2)
+            .font(.title3)
             .foregroundStyle(.steelBlue)
-            .margin(.top, 10)
+            .margin(.top, 20)
             .margin(.bottom, 8)
             .id(title.rawValue)
         
@@ -22,6 +22,7 @@ struct ProjectsView: HTML {
                             .font(.body)
                     } header: {
                         project.name
+                            .font(.title5)
                     } footer: {
                         ForEach(project.techStack) { tech in
                             Badge(tech)
@@ -29,11 +30,13 @@ struct ProjectsView: HTML {
                                 .badgeStyle(.subtleBordered)
                         }
                     }
+                    .cardStyle(.bordered)
+                    .role(.info)
                 }
                 .linkStyle(.button)
                 .role(.none)
+                .width(4)
             }
         }
-        .columns(2)
     }
 }

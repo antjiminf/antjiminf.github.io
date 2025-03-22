@@ -16,7 +16,7 @@ struct IgniteWebsite {
 
 struct MySite: Site {
     var name = "antjiminf"
-    var titleSuffix = " – My Awesome Site"
+    var titleSuffix = " – Portfolio"
     var url = URL(static: "https://antjiminf.github.io")
     var builtInIconsEnabled = true
     var pageWidth = 12

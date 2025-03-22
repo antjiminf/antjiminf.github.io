@@ -16,12 +16,15 @@ struct Home: HTML {
         ExperienceView(title: .experience,
                        jobs: [MyJob(companyName: "Numier", role: "FullStack Developer", location: "Seville, Spain", date: "march 2023 - juny 2023", descriptions: ["Lots"], techStack: ["Flutter", "PHP"])],
                        language: language)
-        EducationView(title: .education,
-                      educations: [Education(institution: "Apple Coding Academy", degree: "iOS Developer", date: "2024", location: "", descriptions: ["Something"], techStack: ["Swift", "SwiftData"])],
-                      language: language)
         ProjectsView(title: .projects,
                      projects: [Project(name: "Cinema Wisdom", description: "App to discover movies", url: "https://github.com/antjiminf/cinema_wisdom", techStack: ["Swift", "SwiftUI"])],
                      language: language)
+        EducationView(title: .education,
+                      educations: [Education(institution: "Apple Coding Academy", degree: "iOS Developer", date: "2024", location: "", descriptions: ["Something"], techStack: ["Swift", "SwiftData"])],
+                      language: language)
+        SocialView(title: .contact, socialStack: [SocialMedia(iconName: "envelope", url: "mailto:antoniojz1998@gmail.com"),
+                                                  SocialMedia(iconName: "github", url: "https://github.com/antjiminf"),
+                                                  SocialMedia(iconName: "linkedin", url: "https://www.linkedin.com/in/antonio-jimenez-infante")])
     }
     
 //    init(language: CustomLanguage) {

@@ -10,13 +10,13 @@ enum NavOption: String, CaseIterable {
     var icon: String {
         switch self {
         case .experience:
-            return "👷‍♂️"
+            return "💼"
         case .education:
-            return "🎓"
+            return "📚"
         case .projects:
             return "💻"
         case .contact:
-            return "☎️"
+            return "✉️"
         }
     }
     
@@ -33,7 +33,7 @@ enum NavOption: String, CaseIterable {
             case (.experience, .spanish):
                 return "\(self.icon) Experiencia"
             case (.education, .spanish):
-                return "\(self.icon) Educación"
+                return "\(self.icon) Formación"
             case (.projects, .spanish):
                 return "\(self.icon) Proyectos"
             case (.contact, .spanish):

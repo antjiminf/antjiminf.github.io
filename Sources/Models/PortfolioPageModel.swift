@@ -36,6 +36,6 @@ struct Project {
 }
 
 struct SocialMedia {
-    let iconUrl: String
+    let iconName: String
     let url: String
 }

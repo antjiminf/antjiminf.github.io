@@ -8,9 +8,9 @@ struct EducationView: HTML {
     
     var body: some HTML {
         Text(title.display(language).uppercased())
-            .font(.title2)
+            .font(.title3)
             .foregroundStyle(.steelBlue)
-            .margin(.top, 10)
+            .margin(.top, 20)
             .margin(.bottom, 8)
             .id(title.rawValue)
         
@@ -18,17 +18,16 @@ struct EducationView: HTML {
             Card {
                 Text(e.degree)
                     .font(.title4)
-                List {
-                    ForEach(e.descriptions) { text in
-                        text
-                    }
+                List(e.descriptions) { text in
+                    text
                 }
             } header: {
                 Text(e.institution)
                     .font(.title5)
+                    .margin(.bottom, -4)
                 Text(e.date)
                     .font(.body)
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(.gray.weighted(.dark))
             } footer: {
                 ForEach(e.techStack) { tech in
                     Badge(tech)
@@ -36,6 +35,8 @@ struct EducationView: HTML {
                         .role(.info)
                 }
             }
+            .cardStyle(.bordered)
+            .role(.info)
         }
     }
 }
