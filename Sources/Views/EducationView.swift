@@ -20,12 +20,15 @@ struct EducationView: HTML {
                     .font(.title4)
                 List {
                     ForEach(e.descriptions) { text in
-                        Text(text)
-                            .font(.body)
+                        text
                     }
                 }
             } header: {
-                e.institution
+                Text(e.institution)
+                    .font(.title5)
+                Text(e.date)
+                    .font(.body)
+                    .foregroundStyle(.secondary)
             } footer: {
                 ForEach(e.techStack) { tech in
                     Badge(tech)

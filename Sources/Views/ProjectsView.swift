@@ -7,18 +7,19 @@ struct ProjectsView: HTML {
     let language: CustomLanguage
     
     var body: some HTML {
-        Text(title.rawValue.uppercased())
+        Text(title.display(language).uppercased())
             .font(.title2)
             .foregroundStyle(.steelBlue)
             .margin(.top, 10)
             .margin(.bottom, 8)
+            .id(title.rawValue)
         
         Grid {
             ForEach(projects) { project in
                 Link(target: project.url) {
                     Card {
                         Text(project.description)
-                            .font(.title4)
+                            .font(.body)
                     } header: {
                         project.name
                     } footer: {
@@ -29,6 +30,8 @@ struct ProjectsView: HTML {
                         }
                     }
                 }
+                .linkStyle(.button)
+                .role(.none)
             }
         }
         .columns(2)

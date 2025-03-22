@@ -21,12 +21,16 @@ struct ExperienceView: HTML {
                     .font(.title4)
                 List {
                     ForEach(job.descriptions) { text in
-                        Text(text)
-                            .font(.body)
+                        text
                     }
                 }
             } header: {
-                job.companyName
+                Text(job.companyName)
+                    .font(.title5)
+                Text(job.date)
+                    .foregroundStyle(.secondary)
+                    .font(.body)
+//                    .margin(.leading, 8)
             } footer: {
                 ForEach(job.techStack) { tech in
                     Badge(tech)
