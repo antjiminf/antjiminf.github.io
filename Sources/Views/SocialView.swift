@@ -3,14 +3,14 @@ import Ignite
 
 struct SocialView: HTML {
     let title: NavOption
-//    let socialStack: [Social]
+    let socialStack: [SocialMedia]
     let language: CustomLanguage
     
     var body: some HTML {
         Divider()
 //        Text(title.display(language).uppercased())
 //            .font(.title2)
-//            .foregroundStyle(.primary)
+//            .foregroundStyle(.steelBlue)
 //            .margin(.top, 10)
 //            .margin(.bottom, 8)
 //            .id(title.rawValue)

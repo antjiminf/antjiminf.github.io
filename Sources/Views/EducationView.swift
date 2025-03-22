@@ -9,7 +9,7 @@ struct EducationView: HTML {
     var body: some HTML {
         Text(title.display(language).uppercased())
             .font(.title2)
-            .foregroundStyle(.primary)
+            .foregroundStyle(.steelBlue)
             .margin(.top, 10)
             .margin(.bottom, 8)
             .id(title.rawValue)
@@ -17,14 +17,21 @@ struct EducationView: HTML {
         ForEach(educations) { e in
             Card {
                 Text(e.degree)
-                    .font(.title3)
-                //Descriptions AQUÍ
-                Text("This is card body text. This is card body text. This is card body text. This is card body text. This is card body text.")
+                    .font(.title4)
+                List {
+                    ForEach(e.descriptions) { text in
+                        Text(text)
+                            .font(.body)
+                    }
+                }
             } header: {
                 e.institution
             } footer: {
-                //STACK TECNICO AQUÍ CON BADGES
-                "Your footer goes here footer"
+                ForEach(e.techStack) { tech in
+                    Badge(tech)
+                        .badgeStyle(.subtleBordered)
+                        .role(.info)
+                }
             }
         }
     }

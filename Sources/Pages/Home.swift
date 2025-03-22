@@ -19,6 +19,9 @@ struct Home: HTML {
         EducationView(title: .education,
                       educations: [Education(institution: "Apple Coding Academy", degree: "iOS Developer", date: "2024", location: "", descriptions: ["Something"], techStack: ["Swift", "SwiftData"])],
                       language: language)
+        ProjectsView(title: .projects,
+                     projects: [Project(name: "Cinema Wisdom", description: "App to discover movies", url: "https://github.com/antjiminf/cinema_wisdom", techStack: ["Swift", "SwiftUI"])],
+                     language: language)
     }
     
 //    init(language: CustomLanguage) {

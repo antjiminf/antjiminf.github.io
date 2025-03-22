@@ -1,5 +1,15 @@
 import Foundation
 
+struct PortfolioPageModel {
+    let name: String
+    let role: String
+    let description: String
+    let jobs: [MyJob]
+    let education: [Education]
+    let projects: [Project]
+    let socialMedia: [SocialMedia]
+}
+
 struct MyJob {
     let companyName: String
     let role: String
@@ -16,4 +26,16 @@ struct Education {
     let location: String
     let descriptions: [String]
     let techStack: [String]
+}
+
+struct Project {
+    let name: String
+    let description: String
+    let url: String
+    let techStack: [String]
+}
+
+struct SocialMedia {
+    let iconUrl: String
+    let url: String
 }

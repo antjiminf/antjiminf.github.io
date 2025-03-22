@@ -9,7 +9,7 @@ struct ExperienceView: HTML {
     var body: some HTML {
         Text(title.display(language).uppercased())
             .font(.title2)
-            .foregroundStyle(.primary)
+            .foregroundStyle(.steelBlue)
             .margin(.top, 10)
             .margin(.bottom, 8)
             .id(title.rawValue)
@@ -18,13 +18,21 @@ struct ExperienceView: HTML {
             
             Card {
                 Text(job.role)
-                    .font(.title3)
-                Text("This is card body text. This is card body text. This is card body text. This is card body text. This is card body text.")
+                    .font(.title4)
+                List {
+                    ForEach(job.descriptions) { text in
+                        Text(text)
+                            .font(.body)
+                    }
+                }
             } header: {
                 job.companyName
             } footer: {
-                //STACK TECNICO AQUÍ CON BADGES
-                "Your footer goes here footer"
+                ForEach(job.techStack) { tech in
+                    Badge(tech)
+                        .badgeStyle(.subtleBordered)
+                        .role(.info)
+                }
             }
         }
     }
