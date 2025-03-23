@@ -25,8 +25,9 @@ struct MySite: Site {
     var feedConfiguration = FeedConfiguration(mode: .full, contentCount: 20, image: .init(url: "https://example.png", width: 32, height: 32))
 
     var homePage = EnglishPage()
-//    var theme
     var layout = MainLayout()
+    var darkTheme: (any Theme)? = MyDarkTheme()
+    var lightTheme: (any Theme)? = MyLightTheme()
     
     var staticPages: [any StaticPage] = [EnglishPage(), SpanishPage()]
 }

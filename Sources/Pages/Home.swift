@@ -9,16 +9,32 @@ struct Home: HTML {
     
     private var themeSwitcher: some HTML {
         Section {
-            ForEach(themes) { theme in
-                Button(theme.name.capitalized) {
+            if let theme = themes.first(where: {$0.colorScheme == .light}) {
+                Button {
+                    Image(systemName: "sun")
+                } actions: {
                     SwitchTheme(theme)
                 }
                 .role(.light)
                 .margin(.horizontal, .xSmall)
+                .foregroundStyle(.darkOrange)
+                .font(.title5)
+            }
+            
+            if let theme = themes.first(where: {$0.colorScheme == .dark}) {
+                Button {
+                    Image(systemName: "moon")
+                } actions: {
+                    SwitchTheme(theme)
+                }
+                .role(.dark)
+                .margin(.horizontal, .xSmall)
+                .foregroundStyle(.yellow)
+                .font(.title5)
             }
         }
         .position(.fixedBottom)
-        .background(.firebrick)
+        .background(.steelBlue)
         .frame(height: 50)
         .frame(maxWidth: .percent(100%), alignment: .center)
     }
@@ -39,9 +55,9 @@ struct Home: HTML {
         EducationView(title: .education,
                       educations: [Education(institution: "Apple Coding Academy", degree: "iOS Developer", date: "2024", location: "", descriptions: ["Something"], techStack: ["Swift", "SwiftData"])],
                       language: language)
-        SocialView(title: .contact, socialStack: [SocialMedia(iconName: "envelope", url: "mailto:antoniojz1998@gmail.com"),
-                                                  SocialMedia(iconName: "github", url: "https://github.com/antjiminf"),
-                                                  SocialMedia(iconName: "linkedin", url: "https://www.linkedin.com/in/antonio-jimenez-infante")])
+        SocialView(title: .contact, socialStack: [SocialMedia(iconName: "linkedin", url: "https://www.linkedin.com/in/antonio-jimenez-infante"),
+                                                  SocialMedia(iconName: "envelope", url: "mailto:antoniojz1998@gmail.com"),
+                                                  SocialMedia(iconName: "github", url: "https://github.com/antjiminf")])
         themeSwitcher
     }
     

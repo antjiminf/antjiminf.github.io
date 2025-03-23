@@ -8,11 +8,11 @@ struct ExperienceView: HTML {
     
     var body: some HTML {
         Text(title.display(language).uppercased())
+            .id(title.rawValue)
+            .margin(.top, 60)
+            .margin(.bottom, 8)
             .font(.title3)
             .foregroundStyle(.steelBlue)
-            .margin(.top, 80)
-            .margin(.bottom, 8)
-            .id(title.rawValue)
         
         ForEach(jobs) { job in
             
@@ -26,10 +26,10 @@ struct ExperienceView: HTML {
                 Text(job.companyName)
                     .font(.title5)
                     .margin(.top, 8)
-                    .margin(.bottom, -2)
+                    .margin(.bottom, 2)
                 Text(job.date)
                     .font(.body)
-                    .foregroundStyle(.gray.weighted(.dark))
+                    .foregroundStyle(.gray.weighted(.semiDark))
             } footer: {
                 ForEach(job.techStack) { tech in
                     Badge(tech)

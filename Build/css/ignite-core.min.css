@@ -3,8 +3,8 @@
 :root {
     --supports-light-theme: true;
     --supports-dark-theme: true;
-    --light-theme-id: "light";
-    --dark-theme-id: "dark";
+    --light-theme-id: "my-light-light";
+    --dark-theme-id: "my-dark-dark";
     --bs-primary: rgb(13 110 253 / 100%);
     --bs-primary-rgb: 13, 110, 253;
     --bs-primary-text-emphasis: rgb(5 44 101 / 100%);
@@ -502,7 +502,7 @@ code, pre {
 }
 
 
-[data-bs-theme="light"] {
+[data-bs-theme="my-light-light"] {
     --bs-primary: rgb(13 110 253 / 100%);
     --bs-primary-rgb: 13, 110, 253;
     --bs-primary-text-emphasis: rgb(5 44 101 / 100%);
@@ -566,7 +566,7 @@ code, pre {
     --syntax-highlight-theme: "xcode-light";
 }
 
-[data-bs-theme="dark"] {
+[data-bs-theme="my-dark-dark"] {
     --bs-primary: rgb(13 110 253 / 100%);
     --bs-primary-rgb: 13, 110, 253;
     --bs-primary-text-emphasis: rgb(109 168 253 / 100%);

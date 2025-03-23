@@ -8,11 +8,11 @@ struct ProjectsView: HTML {
     
     var body: some HTML {
         Text(title.display(language).uppercased())
+            .id(title.rawValue)
+            .margin(.top, 60)
+            .margin(.bottom, 8)
             .font(.title3)
             .foregroundStyle(.steelBlue)
-            .margin(.top, 80)
-            .margin(.bottom, 8)
-            .id(title.rawValue)
         
         Grid {
             ForEach(projects) { project in
@@ -34,6 +34,7 @@ struct ProjectsView: HTML {
                     .role(.info)
                 }
                 .linkStyle(.button)
+                .relationship(.noOpener, .noReferrer)
                 .role(.none)
                 .width(4)
             }
