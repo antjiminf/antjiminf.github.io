@@ -16,6 +16,7 @@ struct ProjectsView: HTML {
         
         Grid {
             ForEach(projects) { project in
+                Spacer(size: .medium)
                 Link(target: project.url) {
                     Card {
                         Text(project.description)

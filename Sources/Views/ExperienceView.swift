@@ -15,7 +15,7 @@ struct ExperienceView: HTML {
             .id(title.rawValue)
         
         ForEach(jobs) { job in
-            
+            Spacer(size: .medium)
             Card {
                 Text(job.role)
                     .font(.title4)

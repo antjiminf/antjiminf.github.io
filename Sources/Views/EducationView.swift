@@ -16,6 +16,7 @@ struct EducationView: HTML {
             .id(title.rawValue)
         
         ForEach(educations) { e in
+            Spacer(size: .medium)
             Card {
                 Text(e.degree)
                     .font(.title4)

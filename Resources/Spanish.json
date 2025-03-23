@@ -1,95 +1,95 @@
 {
-  "name": "Antonio Jiménez Infante",
-  "role": "FullStack Developer / iOS Developer",
-  "description": "Soy un desarrollador full stack con formación en desarrollo de aplicaciones multiplataforma y experiencia en proyectos académicos y personales. Completé un grado superior de dos años, durante el cual realicé varios proyectos significativos, complementando mi formación con prácticas profesionales y desarrollo independiente de aplicaciones. Tras cursar un bootcamp enfocado en el desarrollo con Swift en Apple Coding Academy me he vuelto un apasionado de la integración y robustez del desarrollo nativo en Apple.",
-  "jobs": [
-    {
-      "companyName": "Numier TPV",
-      "role": "Desarrollador Full Stack (Prácticas)",
-      "location": "Sevilla, España",
-      "date": "Marzo - Junio 2023",
-      "descriptions": [
-        "Desarrollo de menú digital con Flutter 3.0+",
-        "Mantenimiento y desarrollo del panel de administración (VueJS 2.9)",
-        "Desarrollo de API en PHP 7.4 con base de datos MySQL",
-        "Colaboración en diseño de interfaz con Figma"
-      ],
-      "techStack": ["Flutter", "VueJS", "PHP", "MySQL", "Figma"]
-    },
-    {
-      "companyName": "Pilates Studio Sevilla",
-      "role": "Desarrollador Freelance",
-      "location": "Sevilla, España (Remoto)",
-      "date": "Marzo 2025 - Actualidad",
-      "descriptions": [
-        "Diseño y desarrollo de una app para la gestión de reservas de clases de pilates.",
-        "Integración con Firebase para autenticación, base de datos y notificaciones.",
-        "Desarrollando con la última versión de Flutter."
-      ],
-      "techStack": ["Flutter", "Firebase"]
-    }
-  ],
-  "education": [
-    {
-      "institution": "Colegio Salesiano San Pedro",
-      "degree": "Técnico Superior en Desarrollo de Aplicaciones Multiplataforma",
-      "date": "2021 - 2023",
-      "location": "Sevilla, España",
-      "descriptions": [
-        "Formación intensiva en desarrollo de software multiplataforma.",
-        "Participación en proyectos prácticos utilizando tecnologías actuales.",
-        "Proyectos académicos con orientación a frontend, backend y desarrollo de apps."
-      ],
-      "techStack": ["Java", "Spring", "Angular", "Flutter", "Docker", "PostgreSQL"]
-    },
-    {
-      "institution": "Apple Coding Academy",
-      "degree": "Swift Full Stack Developer Bootcamp",
-      "date": "Febrero - Diciembre 2024",
-      "location": "España (Remoto)",
-      "descriptions": [
-        "Desarrollo iOS con SwiftUI y UIKit",
-        "Uso de MVVM y Clean Architecture",
-        "Persistencia de datos con CoreData y SwiftData",
-        "Backend con Vapor y Leaf",
-        "Tests unitarios con XCTest",
-        "Publicación en App Store"
-      ],
-      "techStack": ["Swift", "SwiftUI", "UIKit", "Vapor", "Leaf", "CoreData", "SwiftData", "XCTest"]
-    }
-  ],
-  "projects": [
-    {
-      "name": "Cinema Wisdom",
-      "description": "Aplicación que proporciona información sobre películas, incluyendo detalles como sinopsis, elenco y calificaciones.",
-      "url": "https://github.com/antjiminf/cinema_wisdom",
-      "techStack": ["Flutter", "Dart", "API de The Movie Database (TMDB)"]
-    },
-    {
-      "name": "HomeMealsApp",
-      "description": "Aplicación que permite a los usuarios encontrar y compartir recetas caseras, facilitando la planificación de comidas y promoviendo la cocina en casa.",
-      "url": "https://github.com/antjiminf/HomeMealsApp",
-      "techStack": ["Swift", "SwiftUI", "SwiftData", "SIWA"]
-    },
-    {
-      "name": "BigBangTheory",
-      "description": "Aplicación dedicada a la serie 'The Big Bang Theory', ofreciendo información sobre episodios, personajes y curiosidades relacionadas con la serie.",
-      "url": "https://github.com/antjiminf/BigBangTheory",
-      "techStack": ["Swift", "SwiftUI"]
-    }
-  ],
-  "socialMedia": [
-    {
-      "iconName": "envelope",
-      "url": "mailto:antoniojz1998@gmail.com"
-    },
-    {
-      "iconName": "linkedin",
-      "url": "https://es.linkedin.com/in/antonio-jimenez-infante"
-    },
-    {
-      "iconName": "github",
-      "url": "https://github.com/antjiminf"
-    }
-  ]
+    "name": "Antonio Jiménez Infante",
+    "role": "FullStack Developer / iOS Developer",
+    "description": "Soy un desarrollador full stack con formación en desarrollo de aplicaciones multiplataforma y experiencia en proyectos académicos y personales. Completé un grado superior de dos años, durante el cual realicé varios proyectos significativos, complementando mi formación con prácticas profesionales y desarrollo independiente de aplicaciones. Tras cursar un bootcamp enfocado en el desarrollo con Swift en Apple Coding Academy me he vuelto un apasionado de la integración y robustez del desarrollo nativo en Apple.",
+    "jobs": [
+        {
+            "companyName": "Numier TPV",
+            "role": "Desarrollador Full Stack (Prácticas)",
+            "location": "Sevilla, España",
+            "date": "Marzo - Junio 2023",
+            "descriptions": [
+                "Desarrollo de menú digital con Flutter 3.0+",
+                "Mantenimiento y desarrollo del panel de administración (VueJS 2.9)",
+                "Desarrollo de API en PHP 7.4 con base de datos MySQL",
+                "Colaboración en diseño de interfaz con Figma"
+            ],
+            "techStack": ["Flutter", "VueJS", "PHP", "MySQL", "Figma"]
+        },
+        {
+            "companyName": "Pilates Studio Sevilla",
+            "role": "Desarrollador Freelance",
+            "location": "Sevilla, España (Remoto)",
+            "date": "Marzo 2025 - Actualidad",
+            "descriptions": [
+                "Diseño y desarrollo de una app para la gestión de reservas de clases de pilates.",
+                "Integración con Firebase para autenticación, base de datos y notificaciones.",
+                "Desarrollando con la última versión de Flutter."
+            ],
+            "techStack": ["Flutter", "Firebase"]
+        }
+    ],
+    "education": [
+        {
+            "institution": "Colegio Salesiano San Pedro",
+            "degree": "Técnico Superior en Desarrollo de Aplicaciones Multiplataforma",
+            "date": "2021 - 2023",
+            "location": "Sevilla, España",
+            "descriptions": [
+                "Formación intensiva en desarrollo de software multiplataforma.",
+                "Participación en proyectos prácticos utilizando tecnologías actuales.",
+                "Proyectos académicos con orientación a frontend, backend y desarrollo de apps."
+            ],
+            "techStack": ["Java", "Spring", "Angular", "Flutter", "Docker", "PostgreSQL"]
+        },
+        {
+            "institution": "Apple Coding Academy",
+            "degree": "Swift Full Stack Developer Bootcamp",
+            "date": "Febrero - Diciembre 2024",
+            "location": "España (Remoto)",
+            "descriptions": [
+                "Desarrollo iOS con SwiftUI y UIKit",
+                "Uso de MVVM y Clean Architecture",
+                "Persistencia de datos con CoreData y SwiftData",
+                "Backend con Vapor y Leaf",
+                "Tests unitarios con XCTest",
+                "Publicación en App Store"
+            ],
+            "techStack": ["Swift", "SwiftUI", "UIKit", "Vapor", "Leaf", "CoreData", "SwiftData", "XCTest"]
+        }
+    ],
+    "projects": [
+        {
+            "name": "Cinema Wisdom",
+            "description": "Aplicación que proporciona información sobre películas, incluyendo detalles como sinopsis, elenco y calificaciones.",
+            "url": "https://github.com/antjiminf/cinema_wisdom",
+            "techStack": ["Flutter", "Dart", "API de The Movie Database (TMDB)"]
+        },
+        {
+            "name": "HomeMealsApp",
+            "description": "Aplicación que permite a los usuarios encontrar y compartir recetas caseras, facilitando la planificación de comidas y promoviendo la cocina en casa.",
+            "url": "https://github.com/antjiminf/HomeMealsApp",
+            "techStack": ["Swift", "SwiftUI", "SwiftData", "SIWA"]
+        },
+        {
+            "name": "BigBangTheory",
+            "description": "Aplicación dedicada a la serie The Big Bang Theory, ofreciendo información sobre episodios, personajes y curiosidades relacionadas con la serie.",
+            "url": "https://github.com/antjiminf/BigBangTheory",
+            "techStack": ["Swift", "SwiftUI"]
+        }
+    ],
+    "socialMedia": [
+        {
+            "iconName": "github",
+            "url": "https://github.com/antjiminf"
+        },
+        {
+            "iconName": "envelope",
+            "url": "mailto:antoniojz1998@gmail.com"
+        },
+        {
+            "iconName": "linkedin",
+            "url": "https://es.linkedin.com/in/antonio-jimenez-infante"
+        }
+    ]
 }

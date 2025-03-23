@@ -12,6 +12,7 @@ struct IntroductionView: HTML {
             .font(.title1)
         
         Divider()
+            .foregroundStyle(.steelBlue)
         
         Text(description)
             .font(.body)
