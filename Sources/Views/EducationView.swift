@@ -7,12 +7,13 @@ struct EducationView: HTML {
     let language: CustomLanguage
     
     var body: some HTML {
+        Spacer(size: .medium)
         Text(title.display(language).uppercased())
-            .id(title.rawValue)
             .margin(.top, 60)
             .margin(.bottom, 8)
             .font(.title3)
             .foregroundStyle(.steelBlue)
+            .id(title.rawValue)
         
         ForEach(educations) { e in
             Card {

@@ -1,0 +1,133 @@
+{
+  "name": "Antonio Jiménez Infante",
+  "role": "FullStack Developer / iOS Developer",
+  "description": "I am a full stack developer with training in multiplatform application development and experience in both academic and personal projects. I completed a two-year higher degree during which I developed several significant projects, complementing my training with a professional internship and independent app development. After completing a Swift-focused bootcamp at Apple Coding Academy, I became passionate about the seamless integration and stability of native development on Apple platforms.",
+  "jobs": [
+    {
+      "companyName": "Numier TPV",
+      "role": "Full Stack Developer (Internship)",
+      "location": "Seville, Spain",
+      "date": "March - June 2023",
+      "descriptions": [
+        "Developed a digital menu using Flutter 3.0+",
+        "Maintained and improved the admin panel (VueJS 2.9)",
+        "Built an API using PHP 7.4 with a MySQL database",
+        "Collaborated on UI design using Figma"
+      ],
+      "techStack": [
+        "Flutter",
+        "VueJS",
+        "PHP",
+        "MySQL",
+        "Figma"
+      ]
+    },
+    {
+      "companyName": "Pilates Studio Sevilla",
+      "role": "Freelance Developer",
+      "location": "Seville, Spain (Remote)",
+      "date": "March 2025 - Present",
+      "descriptions": [
+        "Designed and developed an app to manage Pilates class bookings.",
+        "Integrated Firebase for authentication, database, and notifications.",
+        "Developing with the latest version of Flutter."
+      ],
+      "techStack": [
+        "Flutter",
+        "Firebase"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Colegio Salesiano San Pedro",
+      "degree": "Higher Technician in Multiplatform Application Development",
+      "date": "2021 - 2023",
+      "location": "Seville, Spain",
+      "descriptions": [
+        "Intensive training in multiplatform software development.",
+        "Participation in practical projects using modern technologies.",
+        "Academic projects focused on frontend, backend, and app development."
+      ],
+      "techStack": [
+        "Java",
+        "Spring",
+        "Angular",
+        "Flutter",
+        "Docker",
+        "PostgreSQL"
+      ]
+    },
+    {
+      "institution": "Apple Coding Academy",
+      "degree": "Swift Full Stack Developer Bootcamp",
+      "date": "February - December 2024",
+      "location": "Spain (Remote)",
+      "descriptions": [
+        "iOS development with SwiftUI and UIKit",
+        "Use of MVVM and Clean Architecture",
+        "Data persistence with CoreData and SwiftData",
+        "Backend with Vapor and Leaf",
+        "Unit testing with XCTest",
+        "App publication on the App Store"
+      ],
+      "techStack": [
+        "Swift",
+        "SwiftUI",
+        "UIKit",
+        "Vapor",
+        "Leaf",
+        "CoreData",
+        "SwiftData",
+        "XCTest"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Cinema Wisdom",
+      "description": "App that provides movie information, including details like synopsis, cast, and ratings.",
+      "url": "https://github.com/antjiminf/cinema_wisdom",
+      "techStack": [
+        "Flutter",
+        "Dart",
+        "The Movie Database (TMDB) API"
+      ]
+    },
+    {
+      "name": "HomeMealsApp",
+      "description": "App to manage your own recipes, discover new ones, plan meals, and organize food at home.",
+      "url": "https://github.com/antjiminf/HomeMealsApp",
+      "techStack": [
+        "Swift",
+        "SwiftUI",
+        "SwiftData",
+        "SIWA"
+      ]
+    },
+    {
+      "name": "BigBangTheory",
+      "description": "Episode tracker for the series 'The Big Bang Theory', allowing users to view details, mark favorites, and track progress.",
+      "url": "https://github.com/antjiminf/BigBangTheory",
+      "techStack": [
+        "Swift",
+        "SwiftUI"
+      ]
+    }
+  ],
+  "socialMedia": [
+    {
+      "iconName": "envelope",
+      "url": "mailto:antoniojz1998@gmail.com"
+    },
+    {
+      "iconName": "linkedin",
+      "url": "https://es.linkedin.com/in/antonio-jimenez-infante"
+    },
+    {
+      "iconName": "github",
+      "url": "https://github.com/antjiminf"
+    }
+  ]
+}
+

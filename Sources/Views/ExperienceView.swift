@@ -8,11 +8,11 @@ struct ExperienceView: HTML {
     
     var body: some HTML {
         Text(title.display(language).uppercased())
-            .id(title.rawValue)
             .margin(.top, 60)
             .margin(.bottom, 8)
             .font(.title3)
             .foregroundStyle(.steelBlue)
+            .id(title.rawValue)
         
         ForEach(jobs) { job in
             
