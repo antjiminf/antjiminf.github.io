@@ -3,8 +3,8 @@ import Foundation
 enum NavOption: String, CaseIterable {
     
     case experience
-    case education
     case projects
+    case education
     case contact
     
     var icon: String {

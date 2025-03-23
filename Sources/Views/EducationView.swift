@@ -10,7 +10,7 @@ struct EducationView: HTML {
         Text(title.display(language).uppercased())
             .font(.title3)
             .foregroundStyle(.steelBlue)
-            .margin(.top, 20)
+            .margin(.top, 80)
             .margin(.bottom, 8)
             .id(title.rawValue)
         
@@ -24,7 +24,8 @@ struct EducationView: HTML {
             } header: {
                 Text(e.institution)
                     .font(.title5)
-                    .margin(.bottom, -4)
+                    .margin(.top, 8)
+                    .margin(.bottom, -2)
                 Text(e.date)
                     .font(.body)
                     .foregroundStyle(.gray.weighted(.dark))

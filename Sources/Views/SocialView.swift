@@ -8,7 +8,7 @@ struct SocialView: HTML {
     var body: some HTML {
         Text {
             ForEach(socialStack) { social in
-                Link(social.iconName, target: social.url)
+                Link(Image(systemName: social.iconName), target: social.url)
                     .role(.secondary)
                     .target(.blank)
                     .relationship(.noOpener, .noReferrer)

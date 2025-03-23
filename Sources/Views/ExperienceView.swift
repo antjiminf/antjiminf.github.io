@@ -10,7 +10,7 @@ struct ExperienceView: HTML {
         Text(title.display(language).uppercased())
             .font(.title3)
             .foregroundStyle(.steelBlue)
-            .margin(.top, 20)
+            .margin(.top, 80)
             .margin(.bottom, 8)
             .id(title.rawValue)
         
@@ -25,7 +25,8 @@ struct ExperienceView: HTML {
             } header: {
                 Text(job.companyName)
                     .font(.title5)
-                    .margin(.bottom, -4)
+                    .margin(.top, 8)
+                    .margin(.bottom, -2)
                 Text(job.date)
                     .font(.body)
                     .foregroundStyle(.gray.weighted(.dark))

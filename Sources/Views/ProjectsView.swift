@@ -10,7 +10,7 @@ struct ProjectsView: HTML {
         Text(title.display(language).uppercased())
             .font(.title3)
             .foregroundStyle(.steelBlue)
-            .margin(.top, 20)
+            .margin(.top, 80)
             .margin(.bottom, 8)
             .id(title.rawValue)
         
