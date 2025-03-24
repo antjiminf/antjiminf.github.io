@@ -34,9 +34,10 @@ struct ProjectsView: HTML {
                     .cardStyle(.bordered)
                     .role(.info)
                 }
-                .linkStyle(.button)
-                .relationship(.noOpener, .noReferrer)
                 .role(.none)
+                .linkStyle(.button)
+                .target(.blank)
+                .relationship(.noOpener, .noReferrer)
                 .width(4)
             }
         }

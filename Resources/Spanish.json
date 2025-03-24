@@ -1,7 +1,7 @@
 {
     "name": "Antonio Jiménez Infante",
-    "role": "FullStack Developer / iOS Developer",
-    "description": "Soy un desarrollador full stack con formación en desarrollo de aplicaciones multiplataforma y experiencia en proyectos académicos y personales. Completé un grado superior de dos años, durante el cual realicé varios proyectos significativos, complementando mi formación con prácticas profesionales y desarrollo independiente de aplicaciones. Tras cursar un bootcamp enfocado en el desarrollo con Swift en Apple Coding Academy me he vuelto un apasionado de la integración y robustez del desarrollo nativo en Apple.",
+    "role": "Desarrollador FullStack / Desarrollador iOS",
+    "description": "Soy un desarrollador full stack con formación en desarrollo de aplicaciones multiplataforma y experiencia en proyectos académicos y personales. Completé un grado superior de dos años, durante el cual realicé varios proyectos significativos, complementando mi formación con prácticas profesionales y desarrollo independiente de aplicaciones. Para complementar mi formación he cursado en Apple Coding Academy el bootcamp Swift FullStack Developer Program enfocado en la integración y robustez del desarrollo nativo en Apple con Swift.",
     "jobs": [
         {
             "companyName": "Numier TPV",
@@ -12,7 +12,7 @@
                 "Desarrollo de menú digital con Flutter 3.0+",
                 "Mantenimiento y desarrollo del panel de administración (VueJS 2.9)",
                 "Desarrollo de API en PHP 7.4 con base de datos MySQL",
-                "Colaboración en diseño de interfaz con Figma"
+                "Diseño de interfaz con Figma"
             ],
             "techStack": ["Flutter", "VueJS", "PHP", "MySQL", "Figma"]
         },
@@ -22,7 +22,7 @@
             "location": "Sevilla, España (Remoto)",
             "date": "Marzo 2025 - Actualidad",
             "descriptions": [
-                "Diseño y desarrollo de una app para la gestión de reservas de clases de pilates.",
+                "Diseño y desarrollo de una app para la gestión del centro deportivo.",
                 "Integración con Firebase para autenticación, base de datos y notificaciones.",
                 "Desarrollando con la última versión de Flutter."
             ],
@@ -45,7 +45,7 @@
         {
             "institution": "Apple Coding Academy",
             "degree": "Swift Full Stack Developer Bootcamp",
-            "date": "Febrero - Diciembre 2024",
+            "date": "Febrero 2024 - Enero 2025",
             "location": "España (Remoto)",
             "descriptions": [
                 "Desarrollo iOS con SwiftUI y UIKit",
@@ -60,16 +60,16 @@
     ],
     "projects": [
         {
-            "name": "Cinema Wisdom",
-            "description": "Aplicación que proporciona información sobre películas, incluyendo detalles como sinopsis, elenco y calificaciones.",
-            "url": "https://github.com/antjiminf/cinema_wisdom",
-            "techStack": ["Flutter", "Dart", "API de The Movie Database (TMDB)"]
-        },
-        {
             "name": "HomeMealsApp",
             "description": "Aplicación que permite a los usuarios encontrar y compartir recetas caseras, facilitando la planificación de comidas y promoviendo la cocina en casa.",
             "url": "https://github.com/antjiminf/HomeMealsApp",
             "techStack": ["Swift", "SwiftUI", "SwiftData", "SIWA"]
+        },
+        {
+            "name": "Cinema Wisdom",
+            "description": "Aplicación que proporciona información sobre películas, incluyendo detalles como sinopsis, elenco y calificaciones.",
+            "url": "https://github.com/antjiminf/cinema_wisdom",
+            "techStack": ["Flutter", "Dart", "API de The Movie Database (TMDB)"]
         },
         {
             "name": "BigBangTheory",
