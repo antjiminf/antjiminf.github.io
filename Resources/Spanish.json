@@ -73,7 +73,7 @@
         },
         {
             "name": "BigBangTheory",
-            "description": "Aplicación dedicada a la serie The Big Bang Theory, ofreciendo información sobre episodios, personajes y curiosidades relacionadas con la serie.",
+            "description": "Aplicación para llevar un seguimiento de los episodios de la serie The Big Bang Theory, que permite a los usuarios ver detalles, marcar favoritos y registrar su progreso.",
             "url": "https://github.com/antjiminf/BigBangTheory",
             "techStack": ["Swift", "SwiftUI"]
         }

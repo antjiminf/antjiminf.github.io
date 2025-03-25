@@ -38,6 +38,7 @@ struct ProjectsView: HTML {
                 .linkStyle(.button)
                 .target(.blank)
                 .relationship(.noOpener, .noReferrer)
+                .hint(text: project.url)
                 .width(4)
             }
         }
